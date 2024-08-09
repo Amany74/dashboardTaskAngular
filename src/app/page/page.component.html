@@ -1,0 +1,35 @@
+
+<!-- 1. Header -->
+<app-header></app-header>
+
+
+<main >
+<div class="cards">
+
+  @for(user of users;track user){
+
+  <div class="card" (click)="openUserDetails(user.id)">
+    <div class="card-body center">
+      <h3 class="card-title"> {{user.first_name + ' ' + user.last_name}}</h3>
+      <p class="text-warning pt-4"> email</p>
+      <h6 class="card-subtitle mb-2 text-muted"></h6>
+      <p class="card-text">{{user.email}}</p>
+    </div>
+  </div>
+}
+</div>
+
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center">
+      <ul class="pagination  pt-3 position-absolute bottom-0 ">
+        <li class="page-item opacity-3"><a class="page-link" (click)="renderPageOne()">1</a></li>
+        <li class="page-item opacity-3"><a class="page-link" (click)="renderPageTwo()">2</a></li>
+        </ul>
+      </div>
+
+  </main>
+
+
+<!-- 3. Footer -->
+<app-footer></app-footer>

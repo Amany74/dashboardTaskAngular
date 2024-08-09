@@ -1,0 +1,30 @@
+<app-header></app-header>
+<section class="section about-section gray-bg " id="about ">
+  <button class=" btn ml-4 " (click)="navigateBack()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 20 20">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg>
+  </button>
+            <div class="container pt-5">
+                <div class="row align-items-center flex-row-reverse p-3">
+                    <div class="col-lg-6">
+                        <div class="about-text go-to">
+                            <h3 class="dark-color">About Me</h3>
+                            <h6 class="theme-color lead">{{name}}</h6>
+                            <div class="row about-list">
+                                <p>
+                                  Email : {{email}}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-avatar">
+                            <img [src]="src" title="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>

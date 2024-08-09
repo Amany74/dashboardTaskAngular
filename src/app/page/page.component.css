@@ -1,0 +1,27 @@
+main{
+  min-height: 87%;
+  position: relative;
+}
+.cards{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding:15px;
+}
+
+.card{
+  padding-top: 50px;
+  width:16%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  transition: 1.2s;
+  transform: scaleX(0.9);
+  cursor: pointer;
+  background-color: #f5f5f579 ;
+}
+
+.card:hover{
+  background-color: aliceblue;
+  transform: scaleX(1);
+}
